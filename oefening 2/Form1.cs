@@ -45,8 +45,6 @@ namespace oefening_2
             cbLijst.Items.Add("Latha");
             cbLijst.Items.Add("Jonas");
             cbLijst.Items.Add("Machiel");
-
-
         }
     }
 }

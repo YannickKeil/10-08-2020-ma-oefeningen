@@ -25,7 +25,7 @@ namespace Oefening_3
             {
                 if (item.ToLower().Contains(txtSearchText.Text.ToLower()))
                 {
-                lbLijst.Items.Add(item);
+                    lbLijst.Items.Add(item);
                 }
             }
         }
@@ -43,6 +43,18 @@ namespace Oefening_3
             foreach (var item in naamLijst)
             {
                 lbLijst.Items.Add(item);
+            }
+        }
+
+        private void txtSearchText_TextChanged(object sender, EventArgs e)
+        {
+            lbLijst.Items.Clear();
+            foreach (var item in naamLijst)
+            {
+                if (item.ToLower().Contains(txtSearchText.Text.ToLower()))
+                {
+                    lbLijst.Items.Add(item);
+                }
             }
         }
     }

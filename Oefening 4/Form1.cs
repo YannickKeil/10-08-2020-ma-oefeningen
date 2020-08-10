@@ -20,6 +20,9 @@ namespace Oefening_4
         private void btnSelect_Click(object sender, EventArgs e)
         {
             MessageBox.Show(cbVoornamen.SelectedValue.ToString());
+            txtVoornaam.Show();
+            txtAchternaam.Show();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -30,6 +30,8 @@
         {
             this.cbVoornamen = new System.Windows.Forms.ComboBox();
             this.btnSelect = new System.Windows.Forms.Button();
+            this.txtVoornaam = new System.Windows.Forms.TextBox();
+            this.txtAchternaam = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cbVoornamen
@@ -50,17 +52,38 @@
             this.btnSelect.UseVisualStyleBackColor = true;
             this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
             // 
+            // txtVoornaam
+            // 
+            this.txtVoornaam.Enabled = false;
+            this.txtVoornaam.Location = new System.Drawing.Point(72, 155);
+            this.txtVoornaam.Name = "txtVoornaam";
+            this.txtVoornaam.Size = new System.Drawing.Size(100, 26);
+            this.txtVoornaam.TabIndex = 2;
+            this.txtVoornaam.Text = "Voornaam";
+            // 
+            // txtAchternaam
+            // 
+            this.txtAchternaam.Enabled = false;
+            this.txtAchternaam.Location = new System.Drawing.Point(293, 155);
+            this.txtAchternaam.Name = "txtAchternaam";
+            this.txtAchternaam.Size = new System.Drawing.Size(100, 26);
+            this.txtAchternaam.TabIndex = 3;
+            this.txtAchternaam.Text = "Achternaam";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtAchternaam);
+            this.Controls.Add(this.txtVoornaam);
             this.Controls.Add(this.btnSelect);
             this.Controls.Add(this.cbVoornamen);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -68,6 +91,8 @@
 
         private System.Windows.Forms.ComboBox cbVoornamen;
         private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.TextBox txtVoornaam;
+        private System.Windows.Forms.TextBox txtAchternaam;
     }
 }
 
