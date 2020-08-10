@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-08-2020 ma oefeningen", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oefening 2", "oefening 2\oefening 2.csproj", "{C543E38D-40B1-4231-B784-D348A4ECBFD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening 3", "Oefening 3\Oefening 3.csproj", "{9E585A09-CDDA-4305-AE68-62C2F77AAC7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C543E38D-40B1-4231-B784-D348A4ECBFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C543E38D-40B1-4231-B784-D348A4ECBFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C543E38D-40B1-4231-B784-D348A4ECBFD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E585A09-CDDA-4305-AE68-62C2F77AAC7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E585A09-CDDA-4305-AE68-62C2F77AAC7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E585A09-CDDA-4305-AE68-62C2F77AAC7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E585A09-CDDA-4305-AE68-62C2F77AAC7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
