@@ -19,8 +19,20 @@ namespace oefening_2
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(cbLijst.SelectedItem.ToString());
-            cbLijst.Items.RemoveAt(cbLijst.SelectedIndex);
+            if (cbLijst.Items.Count <= 0)
+            {
+                MessageBox.Show("geen items meer om te deleten.");
+            }
+            else if (cbLijst.SelectedIndex < 0)
+            {
+                MessageBox.Show("Error geen item geselecteerd. Selteer een item A.U.B.");
+            }
+            else
+            {
+                MessageBox.Show(cbLijst.SelectedItem.ToString());
+                cbLijst.Items.RemoveAt(cbLijst.SelectedIndex);
+            }
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,6 +45,8 @@ namespace oefening_2
             cbLijst.Items.Add("Latha");
             cbLijst.Items.Add("Jonas");
             cbLijst.Items.Add("Machiel");
+
+
         }
     }
 }
