@@ -48,6 +48,7 @@
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(148, 26);
             this.txtInput.TabIndex = 1;
+            this.txtInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtInput_KeyDown);
             // 
             // btnToevoegen
             // 
@@ -69,6 +70,7 @@
             this.Controls.Add(this.lbLijst);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
